@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    background-image: url(../IMG/background.jpg);
+}
+.warraper{
+    height: 1080px;
+    width: 1900px;
+}
+.header{
+    height: 150px;
+    width: 1900px;
+    position: relative;
+}
+.logo{
+    height: 150px;
+    width: 1850px;
+    position:absolute;
+    left: 50px;
+}
+.logo img{
+    width: 200px;
+    height: 90px;
+    border-radius: 50%;
+    left: 50px;
+}
+.menu-parent {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    display: flex;
+    list-style: none;
+}
+.menu-parent a {
+    color: black;
+    height: 40px;
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+}
+.menu-parent a:hover{
+    color:coral;
+}
+.menu-child {
+    display: none;
+}
+.menu-parent li:hover .menu-child{
+    display: block;
+    position:absolute;
+    list-style: none;
+    z-index: 1;
+}
+.menu-child li>a{
+    width: 200px;
+    height: 35px;
+    text-align:inherit;
+    border: 1px solid whitesmoke;
+    padding: 3px;
+    background-color:slategrey;
+}
+.menu-child li:hover>a{
+    text-decoration:underline;
+}
+.header form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.header input,
+.header button {
+    background-color: white;
+    border: 1px solid #058dbe;
+    padding: 3px;
+    border-radius: 10px;
+}
+.header input::-webkit-input-placeholder,
+.header button {
+    color: black;
+}
+.content{
+    height: 300px;
+    width: 1900px;
+}
+
+.content-2>h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -60px;
+}
+
+.block{
+    height: 1400px;
+    width: 1900px;
+    position: relative;
+}
+
+.block-1{
+    background-color:whitesmoke;
+    width:  1900px;
+    height: 350px;
+    float: left;
+    border-bottom: 1px dotted red;
+    margin-top: 60px;
+
+    color: black;
+}
+
+
+.diachi{
+    position:absolute;
+    color: white;
+    top: 13px;
+    text-indent:20px;
+}
+.diachi a:hover{
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    background-color: rgb(38,38,38);
+    width: 1900px;
+    height: 300px;
+    margin-top: 50px;
+    color: white;
+    position:absolute;
+    top: 7240px;
+}
+.footer-left{
+    width: 950px;
+    height: 300px;
+    color: white;
+    float: left;
+    left: 70px;
+    position:absolute;
+}
+.footer-right{
+    width: 950px;
+    height: 300px;
+    color: white;
+    float: right;
+}
+.footer p{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.footer>form{
+    height: 300px;
+    width: 550px;
+    position:absolute;
+    right: 10px;
+    margin-bottom:100px;
+}
+.footer-left form table tr>td{
+    padding-left: 10px;
+}
